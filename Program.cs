@@ -13,10 +13,11 @@ Console.WriteLine("Inserisci il prezzo del nuovo prodotto: ");
 double price = decimal.Parse(Console.ReadLine());*/
 
 
-Prodotto first = new Prodotto("rastrello", "funziona bene", 1.99);
+Prodotto first = new Prodotto("rastrello", "funziona bene", 14.99);
 Console.WriteLine("nome: " + first.GetName());
 Console.WriteLine("descrizione: " + first.GetDescription());
 Console.WriteLine("prezzo: " + first.GetPrice());
 Console.WriteLine("codice prodotto: " + first.GetCode());
+Console.WriteLine("prezzo con iva: " + first.IvaPrice());
 
 

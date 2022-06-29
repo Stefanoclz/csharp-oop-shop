@@ -23,7 +23,7 @@ namespace csharp_oop_shop
             prodCode = rand.Next(1, 100);
         }
 
-        public string GetName() { 
+        public string GetName() {
             return this.prodName;
         }
 
@@ -45,8 +45,8 @@ namespace csharp_oop_shop
         }
 
 
-        public double GetPrice() 
-        { 
+        public double GetPrice()
+        {
             return prodPrice;
         }
 
@@ -61,7 +61,11 @@ namespace csharp_oop_shop
             return this.prodCode;
         }
 
-
-
+        public double IvaPrice()
+        {
+            double iva = (this.prodPrice * 22) / 100;
+            double finalPrice = this.prodPrice + iva;
+            return finalPrice;
+        }
     }
 }
