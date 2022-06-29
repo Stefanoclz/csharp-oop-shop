@@ -8,10 +8,10 @@ namespace csharp_oop_shop
 {
     public class Prodotto
     {
-        public string prodName;
-        public string prodDescription;
-        public double prodPrice;
-        public int prodCode;
+        private string prodName;
+        private string prodDescription;
+        private double prodPrice;
+        private int prodCode;
 
         public Prodotto(string input1, string input2, double input3)
         {
@@ -22,5 +22,46 @@ namespace csharp_oop_shop
             Random rand = new Random();
             prodCode = rand.Next(1, 100);
         }
+
+        public string GetName() { 
+            return this.prodName;
+        }
+
+        public string SetName(string value)
+        {
+            this.prodName = value;
+            return this.prodName;
+        }
+
+        public string GetDescription()
+        {
+            return this.prodDescription;
+        }
+
+        public string SetDescription(string value)
+        {
+            this.prodDescription = value;
+            return this.prodDescription;
+        }
+
+
+        public double GetPrice() 
+        { 
+            return prodPrice;
+        }
+
+        public double SetPrice(double value)
+        {
+            this.prodPrice = value;
+            return prodPrice;
+        }
+
+        public int GetCode()
+        {
+            return this.prodCode;
+        }
+
+
+
     }
 }

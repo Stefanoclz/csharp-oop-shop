@@ -14,6 +14,9 @@ double price = decimal.Parse(Console.ReadLine());*/
 
 
 Prodotto first = new Prodotto("rastrello", "funziona bene", 1.99);
-Console.WriteLine(first.prodName);
+Console.WriteLine("nome: " + first.GetName());
+Console.WriteLine("descrizione: " + first.GetDescription());
+Console.WriteLine("prezzo: " + first.GetPrice());
+Console.WriteLine("codice prodotto: " + first.GetCode());
 
 
