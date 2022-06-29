@@ -20,7 +20,7 @@ namespace csharp_oop_shop
             prodPrice = input3;
 
             Random rand = new Random();
-            prodCode = rand.Next(1, 100);
+            prodCode = rand.Next(1, 99999999);
         }
 
         public string GetName() {
@@ -72,6 +72,24 @@ namespace csharp_oop_shop
         {
             string fullName = this.prodName + this.prodCode.ToString();
             return fullName;
+        }
+
+        public string fullCode()
+        {
+            
+            string stringCode = this.prodCode.ToString();
+            if(stringCode.Length < 8)
+            {
+                string newCode = "";
+                for (int i = 0; i < (8 - stringCode.Length); i++)
+                {
+                    newCode += "0";
+                }
+                return newCode + stringCode;
+            } else
+            {
+                return stringCode;
+            }
         }
     }
 }
