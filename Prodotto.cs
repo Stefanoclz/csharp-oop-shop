@@ -67,5 +67,11 @@ namespace csharp_oop_shop
             double finalPrice = this.prodPrice + iva;
             return finalPrice;
         }
+
+        public string fullName()
+        {
+            string fullName = this.prodName + this.prodCode.ToString();
+            return fullName;
+        }
     }
 }

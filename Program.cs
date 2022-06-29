@@ -19,5 +19,6 @@ Console.WriteLine("descrizione: " + first.GetDescription());
 Console.WriteLine("prezzo: " + first.GetPrice());
 Console.WriteLine("codice prodotto: " + first.GetCode());
 Console.WriteLine("prezzo con iva: " + first.IvaPrice());
+Console.WriteLine("nome completo: " + first.fullName());
 
 
